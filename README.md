@@ -26,4 +26,4 @@ Type source('run_analysis.R', echo=TRUE) in R studio console to run
 ```{r}
 source('run_analysis.R')
 ```
-tidy.csv will be generated in your R working directory
+tidy.txt will be generated in your R working directory
