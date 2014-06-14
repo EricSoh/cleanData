@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>Codebook for Human Activity Recognition Using Smartphones Dataset Ver 1.0</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h3>Codebook for Human Activity Recognition Using Smartphones Dataset Ver 1.0</h3>
+
+<h1></h1>
+
+<p><strong>Methodology</strong><br/>
+The experiments have been carried out with a group of 30 volunteers within an 
+age bracket of 19-48 years.  Each person performed six activities, namely 
+WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYING, while
+wearing a smartphone (Samsung Galaxy S II) on the waist.  </p>
+
+<p>Using its embedded accelerometer <strong>(ACC)</strong> and gyroscope <strong>(GYR)</strong>, the 3-axial <strong>(X, Y, Z)</strong>
+linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. 
+The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data <code>(subject_train.txt)</code> and 30% the test data <code>(subject_test.txt)</code>.</p>
+
+<p>The sensor acceleration signal, which has gravitational <strong>(Gr)</strong> and body motion components <strong>(Bdy)</strong>, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time <strong>(t)</strong> and frequency domain <strong>(f)</strong>.</p>
+
+<p><strong>Variables</strong>  </p>
+
+<p><strong><em>Time Domain (Units:seconds)</em></strong></p>
+
+<ol>
+<li><p><strong>tBdyACC_MeanX</strong><br/>
+The equivalent of <code>[1] tBodyAcc-mean()-X</code> in feature.txt.  Mean of body component signal of Accelerator in time domain for &#39;X&#39; direction   </p></li>
+<li><p><strong>tBdyACC_MeanY</strong><br/>
+The equivalent of <code>[2] tBodyAcc-mean()-Y</code> in feature.txt.  Mean of body component signal of Accelerator in time domain for &#39;Y&#39; direction  </p></li>
+<li><p><strong>tBdyACC_MeanZ</strong><br/>
+The equivalent of <code>[3] tBodyAcc-mean()-Z</code> in feature.txt.  Mean of body component signal of Accelerator in time domain for &#39;Z&#39; direction  </p></li>
+<li><p><strong>tBdyACC_StdX</strong><br/>
+The equivalent of <code>[4] tBodyAcc-std()-X</code> in feature.txt.  Standard deviation of body component signal of Accelerator in time domain for &#39;X&#39; direction  </p></li>
+<li><p><strong>tBdyACC_StdY</strong><br/>
+The equivalent of <code>[5] tBodyAcc-std()-Y</code> in feature.txt.  Standard deviation of body component signal of Accelerator in time domain for &#39;Y&#39; direction   </p></li>
+<li><p><strong>tBdyACC_StdZ</strong><br/>
+The equivalent of <code>[6] tBodyAcc-std()-Z</code> in feature.txt.  Standard deviation of body component signal of Accelerator in time domain for &#39;Z&#39; direction   </p></li>
+<li><p><strong>tGrACC_MeanX</strong><br/>
+The equivalent of <code>[41] tGravityAcc-mean()-X</code> in feature.txt.  Mean of gravity component signal of Accelerator in time domain for &#39;X&#39; direction   </p></li>
+<li><p><strong>tGrACC_MeanY</strong><br/>
+The equivalent of <code>[42] tGravityAcc-mean()-Y</code> in feature.txt.  Mean of gravity component signal of Accelerator in time domain for &#39;Y&#39; direction   </p></li>
+<li><p><strong>tGrACC_MeanZ</strong><br/>
+The equivalent of <code>[43] tGravityAcc-mean()-Z</code> in feature.txt.  Mean of gravity component signal of Accelerator in time domain for &#39;Z&#39; direction   </p></li>
+<li><p><strong>tGrACC_StdX</strong><br/>
+The equivalent of <code>[44] tGravityAcc-std()-X</code> in feature.txt.  Standard deviation of gravity component signal of Accelerator in time domain for &#39;X&#39; direction   </p></li>
+<li><p><strong>tGrACC_StdY</strong><br/>
+The equivalent of <code>[45] tGravityAcc-std()-Y</code> in feature.txt.  Standard deviation of gravity component signal of Accelerator in time domain for &#39;Y&#39; direction   </p></li>
+<li><p><strong>tGrACC_StdZ</strong><br/>
+The equivalent of <code>[46] tGravityAcc-std()-Z</code> in feature.txt.  Standard deviation of gravity component signal of Accelerator in time domain for &#39;Z&#39; direction   </p></li>
+<li><p><strong>tBdyACCJerk_MeanX</strong><br/>
+The equivalent of <code>[81] tBodyAccJerk-mean()-X</code> in feature.txt.  Mean of body component  signal of Accelerator for jerking motion in time domain for &#39;X&#39; direction   </p></li>
+<li><p><strong>tBdyACCJerk_MeanY</strong><br/>
+The equivalent of <code>[82] tBodyAccJerk-mean()-Y</code> in feature.txt.  Mean of body component signal of Accelerator for jerking motion in time domain for &#39;Y&#39; direction   </p></li>
+<li><p><strong>tBdyACCJerk_MeanZ</strong><br/>
+The equivalent of <code>[83] tBodyAccJerk-mean()-Z</code> in feature.txt.  Mean of body component signal of Accelerator for jerking motion in time domain for &#39;Z&#39; direction   </p></li>
+<li><p><strong>tBdyACCJerk_StdX</strong><br/>
+The equivalent of <code>[84] tBodyAccJerk-std()-X</code> in feature.txt.  Standard deviation of body component signal of Accelerator for jerking motion in time domain for &#39;X&#39; direction   </p></li>
+<li><p><strong>tBdyACCJerk_StdY</strong><br/>
+The equivalent of <code>[85] tBodyAccJerk-std()-Y</code> in feature.txt.  Standard deviation of body component signal of Accelerator for jerking motion in time domain for &#39;Y&#39; direction   </p></li>
+<li><p><strong>tBdyACCJerk_StdZ</strong><br/>
+The equivalent of <code>[86] tBodyAccJerk-std()-Z</code> in feature.txt.  Standard deviation of body component signal of Accelerator for jerking motion in time domain for &#39;Z&#39; direction   </p></li>
+<li><p><strong>tBdyGYR_MeanX</strong><br/>
+The equivalent of <code>[121] tBodyGyro-mean()-X</code> in feature.txt.  Mean of body component signal of Gyroscope in time domain for &#39;X&#39; direction   </p></li>
+<li><p><strong>tBdyGYR_MeanY</strong><br/>
+The equivalent of <code>[122] tBodyGyro-mean()-Y</code> in feature.txt.  Mean of body component signal of Gyroscope in time domain for &#39;Y&#39; direction   </p></li>
+<li><p><strong>tBdyGYR_MeanZ</strong><br/>
+The equivalent of <code>[123] tBodyGyro-mean()-Z</code> in feature.txt.  Mean of body component signal of Gyroscope in time domain for &#39;Z&#39; direction   </p></li>
+<li><p><strong>tBdyGYR_StdX</strong><br/>
+The equivalent of <code>[124] tBodyGyro-std()-X</code> in feature.txt.  Standard deviation of body component signal of Gyroscope in time domain for &#39;X&#39; direction   </p></li>
+<li><p><strong>tBdyGYR_StdY</strong><br/>
+The equivalent of <code>[125] tBodyGyro-std()-Y</code> in feature.txt.  Standard deviation of body component signal of Gyroscope in time domain for &#39;Y&#39; direction   </p></li>
+<li><p><strong>tBdyGYR_StdZ</strong><br/>
+The equivalent of <code>[126] tBodyGyro-std()-Z</code> in feature.txt.  Standard deviation of body component signal of Gyroscope in time domain for &#39;Z&#39; direction   </p></li>
+<li><p><strong>tBdyGYRJerk_MeanX</strong><br/>
+The equivalent of <code>[161] tBodyGyroJerk-mean()-X</code> in feature.txt.  Mean of body component signal of Gyroscope for jerking motion in time domain for &#39;Z&#39; direction   </p></li>
+<li><p><strong>tBdyGYRJerk_MeanY</strong><br/>
+The equivalent of <code>[162] tBodyGyroJerk-mean()-Y</code> in feature.txt.  Mean of body component signal of Gyroscope for jerking motion in time domain for &#39;Y&#39; direction   </p></li>
+<li><p><strong>tBdyGYRJerk_MeanZ</strong><br/>
+The equivalent of <code>[163] tBodyGyroJerk-mean()-Z</code> in feature.txt.  Mean of body component signal of Gyroscope for jerking motion in time domain for &#39;Z&#39; direction   </p></li>
+<li><p><strong>tBdyGYRJerk_StdX</strong><br/>
+The equivalent of <code>[164] tBodyGyroJerk-std()-X</code> in feature.txt.  Standard deviation of body component signal of Gyroscope for jerking motion in time domain for &#39;X&#39; direction   </p></li>
+<li><p><strong>tBdyGYRJerk_StdY</strong><br/>
+The equivalent of <code>[165] tBodyGyroJerk-std()-Y</code> in feature.txt.  Standard deviation of body component signal of Gyroscope for jerking motion in time domain for &#39;Y&#39; direction   </p></li>
+<li><p><strong>tBdyGYRJerk_StdZ</strong><br/>
+The equivalent of <code>[166] tBodyGyroJerk-std()-Z</code> in feature.txt.  Standard deviation of body component signal of Gyroscope for jerking motion in time domain for &#39;Z&#39; direction.   </p></li>
+<li><p><strong>tBdyACCMag_Mean</strong><br/>
+The equivalent of <code>[201] tBodyAccMag-mean()</code> in feature.txt.  Mean of the magnitude of body component signal of Accelerometer in time domain.   </p></li>
+<li><p><strong>tBdyACCMag_Std</strong><br/>
+The equivalent of <code>[202] tBodyAccMag-std()</code> in feature.txt.  Standard deviation of the magnitude of body component signal of Accelerometer in time domain.   </p></li>
+<li><p><strong>tGrACCMag_Mean</strong><br/>
+The equivalent of <code>[214] tGravityAccMag-mean()</code> in feature.txt.  Mean of the magnitude of gravity component signal of Accelerometer in time domain.   </p></li>
+<li><p><strong>tGrACCMag_Std</strong><br/>
+The equivalent of <code>[215] tGravityAccMag-std()</code> in feature.txt.  Standard deviation of the magnitude of gravity component signal of Accelerometer in time domain.   </p></li>
+<li><p><strong>tBdyACCJerkMag_Mean</strong><br/>
+The equivalent of <code>[227] tBodyAccJerkMag-mean()</code> in feature.txt.  Mean of the magnitude of body component signal of Accelerometer for jerking motion in time domain.   </p></li>
+<li><p><strong>tBdyACCJerkMag_Std</strong><br/>
+The equivalent of <code>[228] tBodyAccJerkMag-std()</code> in feature.txt.  Standard deviation of the magnitude of body component signal of Accelerometer for jerking motion in time domain.   </p></li>
+<li><p><strong>tBdyGYRMag_Mean</strong><br/>
+The equivalent of <code>[240] tBodyGyroMag-mean()</code> in feature.txt.  Mean of the magnitude of body component signal of Gyroscope in time domain.   </p></li>
+<li><p><strong>tBdyGYRMag_Std</strong><br/>
+The equivalent of <code>[241] tBodyGyroMag-std()</code> in feature.txt.  Standard deviation of the magnitude of body component signal of Gyroscope in time domain.  </p></li>
+<li><p><strong>tBdyGYRJerkMag_Mean</strong><br/>
+The equivalent of <code>[253] tBodyGyroJerkMag-mean()</code> in feature.txt.  Mean of the magnitude of body component signal of Gyroscope for jerking motion in time domain.  </p></li>
+<li><p><strong>tBdyGYRJerkMag_Std</strong><br/>
+The equivalent of <code>[254] tBodyGyroJerkMag-std()</code> in feature.txt.  Standard deviation of the magnitude of body component signal of Gyroscope for jerking motion in time domain.  </p></li>
+</ol>
+
+<p><strong><em>Frequency domain (Units: Hz)</em></strong></p>
+
+<ol>
+<li><p><strong>fBdyACC_MeanX</strong><br/>
+The equivalent of <code>[266] fBodyAcc-mean()-X</code> in feature.txt.  Mean of body component signal of Accelerator in frequency domain for &#39;X&#39; direction   </p></li>
+<li><p><strong>fBdyACC_MeanY</strong><br/>
+The equivalent of <code>[267] fBodyAcc-mean()-Y</code> in feature.txt.  Mean of body component signal of Accelerator in frequency domain for &#39;Y&#39; direction  </p></li>
+<li><p><strong>fBdyACC_MeanZ</strong><br/>
+The equivalent of <code>[268] fBodyAcc-mean()-Z</code> in feature.txt.  Mean of body component signal of Accelerator in frequency domain for &#39;Z&#39; direction  </p></li>
+<li><p><strong>fBdyACC_StdX</strong><br/>
+The equivalent of <code>[269] fBodyAcc-std()-X</code> in feature.txt.  Standard deviation of body component signal of Accelerator in frequency domain for &#39;X&#39; direction  </p></li>
+<li><p><strong>fBdyACC_StdY</strong><br/>
+The equivalent of <code>[270] fBodyAcc-std()-Y</code> in feature.txt.  Standard deviation of body component signal of Accelerator in frequency domain for &#39;Y&#39; direction   </p></li>
+<li><p><strong>fBdyACC_StdZ</strong><br/>
+The equivalent of <code>[271] fBodyAcc-std()-Z</code> in feature.txt.  Standard deviation of body component signal of Accelerator in frequency domain for &#39;Z&#39; direction   </p></li>
+<li><p><strong>fBdyACCJerk_MeanX</strong><br/>
+The equivalent of <code>[345] fBodyAccJerk-mean()-X</code> in feature.txt.  Mean of body component signal of Accelerator for jerking motion in frequency domain for &#39;X&#39; direction   </p></li>
+<li><p><strong>fBdyACCJerk_MeanY</strong><br/>
+The equivalent of <code>[346] fBodyAccJerk-mean()-Y</code> in feature.txt.  Mean of body component signal of Accelerator for jerking motion in frequency domain for &#39;Y&#39; direction   </p></li>
+<li><p><strong>fBdyACCJerk_MeanZ</strong><br/>
+The equivalent of <code>[347] fBodyAccJerk-mean()-Z</code> in feature.txt.  Mean of body component signal of Accelerator for jerking motion in frequency domain for &#39;Z&#39; direction   </p></li>
+<li><p><strong>fBdyACCJerk_StdX</strong><br/>
+The equivalent of <code>[348] fBodyAccJerk-std()-X</code> in feature.txt.  Standard deviation of body component signal of Accelerator for jerking motion in frequency domain for &#39;X&#39; direction   </p></li>
+<li><p><strong>fBdyACCJerk_StdY</strong><br/>
+The equivalent of <code>[349] fBodyAccJerk-std()-Y</code> in feature.txt.  Standard deviation of body component signal of Accelerator for jerking motion in frequency domain for &#39;Y&#39; direction   </p></li>
+<li><p><strong>fBdyACCJerk_StdZ</strong><br/>
+The equivalent of <code>[350] fBodyAccJerk-std()-Z</code> in feature.txt.  Standard deviation of body component signal of Accelerator for jerking motion in frequency domain for &#39;Z&#39; direction   </p></li>
+<li><p><strong>fBdyGYR_MeanX</strong><br/>
+The equivalent of <code>[424] fBodyGyro-mean()-X</code> in feature.txt.  Mean of body component signal of Gyroscope in frequency domain for &#39;X&#39; direction   </p></li>
+<li><p><strong>fBdyGYR_MeanY</strong><br/>
+The equivalent of <code>[425] fBodyGyro-mean()-Y</code> in feature.txt.  Mean of body component signal of Gyroscope in frequency domain for &#39;Y&#39; direction   </p></li>
+<li><p><strong>fBdyGYR_MeanZ</strong><br/>
+The equivalent of <code>[426] fBodyGyro-mean()-Z</code> in feature.txt.  Mean of body component signal of Gyroscope in frequency domain for &#39;Z&#39; direction   </p></li>
+<li><p><strong>fBdyGYR_StdX</strong><br/>
+The equivalent of <code>[427] fBodyGyro-std()-X</code> in feature.txt.  Standard deviation of body component signal of Gyroscope in frequency domain for &#39;X&#39; direction   </p></li>
+<li><p><strong>fBdyGYR_StdY</strong><br/>
+The equivalent of <code>[428] fBodyGyro-std()-Y</code> in feature.txt.  Standard deviation of body component signal of Gyroscope in frequency domain for &#39;Y&#39; direction   </p></li>
+<li><p><strong>fBdyGYR_StdZ</strong><br/>
+The equivalent of <code>[429] fBodyGyro-std()-Z</code> in feature.txt.  Standard deviation of body component signal of Gyroscope in frequency domain for &#39;Z&#39; direction   </p></li>
+</ol>
+
+<p>503 fBodyAccMag-mean()</p>
+
+<p>504 fBodyAccMag-std()</p>
+
+<p>516 fBodyBodyAccJerkMag-mean()
+517 fBodyBodyAccJerkMag-std()</p>
+
+<p>529 fBodyBodyGyroMag-mean()
+530 fBodyBodyGyroMag-std()</p>
+
+<p>542 fBodyBodyGyroJerkMag-mean()
+543 fBodyBodyGyroJerkMag-std()</p>
+
+<p><strong>Reference</strong><br/>
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+(<a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones">http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones</a>)</p>
+
+</body>
+
+</html>
+
